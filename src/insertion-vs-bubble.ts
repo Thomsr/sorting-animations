@@ -1,8 +1,10 @@
 import {makeProject} from '@motion-canvas/core/lib';
 
-import example from './scenes/mergesort/example?scene';
+import scene from './scenes/insertion-vs-bubble/scene?scene';
 
 export default makeProject({
-  scenes: [example],
+  scenes: [
+    scene,
+],
   background: '#141414',
 });

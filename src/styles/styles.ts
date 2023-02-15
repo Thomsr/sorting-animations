@@ -25,6 +25,12 @@ export const Colors = {
     fontWeight: 700,
     fontSize: 28,
   };
+
+  export const textStyle = {
+    paddingTop: 10,
+    fontFamily: 'JetBrains Mono',
+    fill: 'rgba(255, 255, 255, 0.6)',
+  };
   
   export const WhiteLabel = {
     ...BaseFont,
