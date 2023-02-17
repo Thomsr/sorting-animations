@@ -1,4 +1,10 @@
 {
   "version": 1,
-  "seed": 3862406902
+  "seed": 3862406902,
+  "timeEvents": [
+    {
+      "name": "Split1",
+      "targetTime": 6.955204787011802
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "seed": 3097140763,
+  "timeEvents": [
+    {
+      "name": "Divide",
+      "targetTime": 5.356923237453552
+    },
+    {
+      "name": "Sorting",
+      "targetTime": 8.78985820961303
+    },
+    {
+      "name": "Merge",
+      "targetTime": 13.57216008971222
+    },
+    {
+      "name": "Sorted",
+      "targetTime": 14.764758553175838
+    },
+    {
+      "name": "next",
+      "targetTime": 21.13145792717541
+    }
+  ]
+}
