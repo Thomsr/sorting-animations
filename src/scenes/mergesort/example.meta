@@ -3,8 +3,32 @@
   "seed": 3862406902,
   "timeEvents": [
     {
+      "name": "6",
+      "targetTime": 26.566520311373655
+    },
+    {
+      "name": "75",
+      "targetTime": 24.32229457191697
+    },
+    {
+      "name": "82",
+      "targetTime": 15.558605212975305
+    },
+    {
+      "name": "756",
+      "targetTime": 12.305728535854206
+    },
+    {
       "name": "Split1",
       "targetTime": 6.955204787011802
+    },
+    {
+      "name": "Split2",
+      "targetTime": 18.44759951659406
+    },
+    {
+      "name": "Split3",
+      "targetTime": 31.48544799065138
     }
   ]
 }
