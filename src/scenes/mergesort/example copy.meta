@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "seed": 3862406902,
+  "timeEvents": [
+    {
+      "name": "5",
+      "targetTime": 53.56994938746004
+    },
+    {
+      "name": "6",
+      "targetTime": 26.793480377543347
+    },
+    {
+      "name": "7",
+      "targetTime": 53.02522255719277
+    },
+    {
+      "name": "75",
+      "targetTime": 24.32229457191697
+    },
+    {
+      "name": "82",
+      "targetTime": 15.558605212975305
+    },
+    {
+      "name": "756",
+      "targetTime": 12.305728535854206
+    },
+    {
+      "name": "Split1",
+      "targetTime": 6.955204787011802
+    },
+    {
+      "name": "Split2",
+      "targetTime": 18.44759951659406
+    },
+    {
+      "name": "Split3",
+      "targetTime": 30.94928665571594
+    },
+    {
+      "name": "Sorted",
+      "targetTime": 40.802483499412595
+    },
+    {
+      "name": "the way",
+      "targetTime": 55.21110780043593
+    },
+    {
+      "name": "small5",
+      "targetTime": 63.296189870895184
+    },
+    {
+      "name": "last7",
+      "targetTime": 67.76387872038656
+    },
+    {
+      "name": "select 57",
+      "targetTime": 74.80831559757345
+    },
+    {
+      "name": "only6",
+      "targetTime": 78.10150844417323
+    },
+    {
+      "name": "deselect",
+      "targetTime": 79.94949103687883
+    },
+    {
+      "name": "5_1",
+      "targetTime": 83.63559670902359
+    },
+    {
+      "name": "add5",
+      "targetTime": 84.91161392583552
+    },
+    {
+      "name": "add6",
+      "targetTime": 87.79873184877945
+    },
+    {
+      "name": "add7",
+      "targetTime": 93.41564448384196
+    },
+    {
+      "name": "Sorted_1",
+      "targetTime": 97.1942019446994
+    },
+    {
+      "name": "splitright",
+      "targetTime": 100.20984294892936
+    },
+    {
+      "name": "Deselect blue border",
+      "targetTime": 104.74730583689889
+    },
+    {
+      "name": "Split the array",
+      "targetTime": 109.13892397160735
+    },
+    {
+      "name": "Put 2",
+      "targetTime": 117.85883271353289
+    },
+    {
+      "name": "And then 8",
+      "targetTime": 118.88333333333334
+    },
+    {
+      "name": "RightArrayhasbeensorted",
+      "targetTime": 123.77850055327174
+    },
+    {
+      "name": "Lefthalf",
+      "targetTime": 126.3267182324501
+    },
+    {
+      "name": "Righthalf",
+      "targetTime": 127.1849388859048
+    },
+    {
+      "name": "Finding smallest",
+      "targetTime": 130.2
+    },
+    {
+      "name": "Putting it",
+      "targetTime": 132.1035877018295
+    },
+    {
+      "name": "findSmallestelement2",
+      "targetTime": 134.88559046337932
+    },
+    {
+      "name": "putSmallest",
+      "targetTime": 136.78423669089952
+    },
+    {
+      "name": "yougethe",
+      "targetTime": 138.63293738259918
+    }
+  ]
+}

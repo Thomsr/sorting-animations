@@ -40,7 +40,7 @@ export default makeScene2D(function* (view) {
         <Rect
           ref={OutlineRef1}
           x={-(ArrayVal.length/2) * (box) + 4 * ((box) / 2) - 12}
-          y={200}
+          y={100}
           height={box + padding}
           width={4 * box + padding}
           stroke={Colors.blue}
@@ -51,7 +51,7 @@ export default makeScene2D(function* (view) {
         <Rect
           ref={OutlineRef2}
           x={(ArrayVal.length/2) * (box) - 3 * ((box) / 2) + 12}
-          y={200}
+          y={100}
           height={box + padding}
           width={3 * box + padding}
           stroke={Colors.blue}
@@ -73,13 +73,14 @@ export default makeScene2D(function* (view) {
     yield* OutlineRef3().opacity(1, .5)
 
     yield* waitUntil('Divide');
+    yield OutlineRef3().position.y(-100, .5);
     for(let i = 0; i < 4; i++){
       yield ArrayRef().children()[i].position.x(ArrayRef().boxArray[i].position.x() - 12, .5)
-      yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() + 200, .5)
+      yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() + 100, .5)
     }
     for(let i = 4; i < 7; i++){
       yield ArrayRef().children()[i].position.x(ArrayRef().boxArray[i].position.x() + 12, .5)
-      yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() + 200, .5)
+      yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() + 100, .5)
     }
 
     yield* all(
@@ -104,8 +105,9 @@ export default makeScene2D(function* (view) {
       ArrayRef().children()[4].position(new Vector2(-468+4*box, 0), 1),
       ArrayRef().children()[3].position(new Vector2(-468+5*box, 0), 1),
       ArrayRef().children()[5].position(new Vector2(-468+6*box, 0), 1),
-      OutlineRef1().opacity(0, 1),
-      OutlineRef2().opacity(0, 1),
+      OutlineRef1().opacity(0, .5),
+      OutlineRef2().opacity(0, .5),
+      OutlineRef3().position.y(0, .5)
     )
 
     yield* waitUntil('Sorted');

@@ -4,27 +4,27 @@
   "timeEvents": [
     {
       "name": "5",
-      "targetTime": 53.56994938746004
+      "targetTime": 54.18661605412671
     },
     {
       "name": "6",
-      "targetTime": 26.793480377543347
+      "targetTime": 27.410147044210014
     },
     {
       "name": "7",
-      "targetTime": 53.02522255719277
+      "targetTime": 53.64188922385943
     },
     {
       "name": "75",
-      "targetTime": 24.32229457191697
+      "targetTime": 24.938961238583637
     },
     {
       "name": "82",
-      "targetTime": 15.558605212975305
+      "targetTime": 16.175271879641972
     },
     {
       "name": "756",
-      "targetTime": 12.305728535854206
+      "targetTime": 12.924068026864973
     },
     {
       "name": "Split1",
@@ -32,111 +32,119 @@
     },
     {
       "name": "Split2",
-      "targetTime": 18.44759951659406
+      "targetTime": 19.064266183260727
     },
     {
       "name": "Split3",
-      "targetTime": 30.94928665571594
+      "targetTime": 31.565953322382608
+    },
+    {
+      "name": "View",
+      "targetTime": 38.376594154560244
     },
     {
       "name": "Sorted",
-      "targetTime": 40.802483499412595
+      "targetTime": 41.41915016607926
     },
     {
       "name": "the way",
-      "targetTime": 55.21110780043593
+      "targetTime": 55.8277744671026
     },
     {
       "name": "small5",
-      "targetTime": 63.296189870895184
+      "targetTime": 63.91285653756185
     },
     {
       "name": "last7",
-      "targetTime": 67.76387872038656
+      "targetTime": 68.38054538705323
     },
     {
       "name": "select 57",
-      "targetTime": 74.80831559757345
+      "targetTime": 75.42498226424013
     },
     {
       "name": "only6",
-      "targetTime": 78.10150844417323
+      "targetTime": 78.71817511083991
     },
     {
       "name": "deselect",
-      "targetTime": 79.94949103687883
+      "targetTime": 80.5661577035455
     },
     {
       "name": "5_1",
-      "targetTime": 83.63559670902359
+      "targetTime": 84.25226337569025
     },
     {
       "name": "add5",
-      "targetTime": 84.91161392583552
+      "targetTime": 85.52828059250218
     },
     {
       "name": "add6",
-      "targetTime": 87.79873184877945
+      "targetTime": 88.41539851544611
     },
     {
       "name": "add7",
-      "targetTime": 93.41564448384196
+      "targetTime": 94.03231115050863
     },
     {
       "name": "Sorted_1",
-      "targetTime": 97.1942019446994
+      "targetTime": 97.81086861136606
     },
     {
       "name": "splitright",
-      "targetTime": 100.20984294892936
+      "targetTime": 100.82650961559604
     },
     {
       "name": "Deselect blue border",
-      "targetTime": 104.74730583689889
+      "targetTime": 105.36397250356555
     },
     {
       "name": "Split the array",
-      "targetTime": 109.13892397160735
+      "targetTime": 109.75559063827401
     },
     {
       "name": "Put 2",
-      "targetTime": 117.85883271353289
+      "targetTime": 118.47549938019955
     },
     {
       "name": "And then 8",
-      "targetTime": 118.88333333333334
+      "targetTime": 119.5
     },
     {
       "name": "RightArrayhasbeensorted",
-      "targetTime": 123.77850055327174
+      "targetTime": 124.3951672199384
     },
     {
       "name": "Lefthalf",
-      "targetTime": 126.3267182324501
+      "targetTime": 126.94338489911678
     },
     {
       "name": "Righthalf",
-      "targetTime": 127.1849388859048
+      "targetTime": 127.80160555257147
     },
     {
       "name": "Finding smallest",
-      "targetTime": 130.2
+      "targetTime": 130.81666666666666
     },
     {
       "name": "Putting it",
-      "targetTime": 132.1035877018295
+      "targetTime": 132.72025436849617
     },
     {
       "name": "findSmallestelement2",
-      "targetTime": 134.88559046337932
+      "targetTime": 135.50225713004596
     },
     {
       "name": "putSmallest",
-      "targetTime": 136.78423669089952
+      "targetTime": 137.4009033575662
     },
     {
       "name": "yougethe",
-      "targetTime": 138.63293738259918
+      "targetTime": 139.24960404926583
+    },
+    {
+      "name": "nextclip",
+      "targetTime": 141.74712350012692
     }
   ]
 }

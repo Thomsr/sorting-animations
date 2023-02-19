@@ -75,17 +75,13 @@ export default makeScene2D(function* (view) {
   yield* waitUntil("Split1");
   yield* OutlineRef[0].opacity(1, .5)
   yield OutlineRef[0].position.y(-100, .5)
-  for(let i = 0; i < ArrayVal.length; i++){
-    yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() - 100, .5)
-  }
-  yield* waitFor(.5);
   for(let i = 0; i < 3; i++){
     yield ArrayRef().children()[i].position.x(ArrayRef().boxArray[i].position.x() - 24, .5)
-    yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() + 200, .5)
+    yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() + 100, .5)
   }
   for(let i = 3; i < 5; i++){
     yield ArrayRef().children()[i].position.x(ArrayRef().boxArray[i].position.x() + 24, .5)
-    yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() + 200, .5)
+    yield ArrayRef().children()[i].position.y(ArrayRef().boxArray[i].position.y() + 100, .5)
   }
 
   view.add(
@@ -145,7 +141,6 @@ export default makeScene2D(function* (view) {
     yield OutlineRef[i].position.y(OutlineRef[i].position.y() - 100, .5)
   }
 
-
   yield all(
     ArrayRef().boxArray[3].position.y(ArrayRef().boxArray[3].position.y() - 100, .5), 
     ArrayRef().boxArray[4].position.y(ArrayRef().boxArray[4].position.y() - 100, .5), 
@@ -198,7 +193,7 @@ export default makeScene2D(function* (view) {
   )
   for(let i = 0; i < 2; i++){
     yield ArrayRef().HighLight(i, .5, new Color(Colors.blue))
-    yield* waitFor(.7);
+    yield* waitFor(.2);
   }
 
   yield* waitUntil('6');
@@ -266,6 +261,12 @@ export default makeScene2D(function* (view) {
     OutlineRef[6].stroke(Colors.surface, .5),
   )
 
+  yield* waitUntil('View')
+  yield* all(
+    OutlineRef[5].stroke(Colors.blue, .5),
+    OutlineRef[6].stroke(Colors.blue, .5),
+  )
+
   yield* waitUntil('Sorted')
   yield* all(
     ArrayRef().HighLight(0, .5, new Color(Colors.green)),
@@ -275,7 +276,9 @@ export default makeScene2D(function* (view) {
   yield* waitFor(1)
   yield* all(
     ArrayRef().HighLight(0, .5, new Color(Colors.surface)),
-    ArrayRef().HighLight(1, .5, new Color(Colors.surface))
+    ArrayRef().HighLight(1, .5, new Color(Colors.surface)),
+    OutlineRef[5].stroke(Colors.surface, .5),
+    OutlineRef[6].stroke(Colors.surface, .5),
   )
 
   yield* waitUntil('7')
@@ -292,15 +295,20 @@ export default makeScene2D(function* (view) {
 
   yield* waitUntil('small5')
   yield* all(
+    ArrayRef().HighLight(1, 1, new Color(Colors.blue)),
     ArrayRef().boxArray[1].position(new Vector2(-360, 100), 1),
     OutlineRef[6].opacity(0, 1)
   )
 
   yield* waitUntil('last7')
   yield* all(
+    ArrayRef().HighLight(1, 1, new Color(Colors.surface)),
+    ArrayRef().HighLight(0, 1, new Color(Colors.blue)),
     ArrayRef().boxArray[0].position(new Vector2(-360+box, 100), 1),
     OutlineRef[5].opacity(0, 1)
   )
+  yield* waitFor(1)
+  yield* ArrayRef().HighLight(0, 1, new Color(Colors.surface))
 
   for(let i = 0; i < OutlineRef.length; i++){
     yield OutlineRef[i].position.y(OutlineRef[i].position.y() + 100, 1)
@@ -346,6 +354,13 @@ export default makeScene2D(function* (view) {
   yield* waitFor(1)
   yield* ArrayRef().HighLight(0, .5, new Color(Colors.surface))
 
+  for(let i = 0; i < OutlineRef.length; i++){
+    yield OutlineRef[i].position.y(OutlineRef[i].position.y() + 100, 1)
+  }
+  for(let i = 0; i < ArrayVal.length; i++){
+    yield ArrayRef().boxArray[i].position.y(ArrayRef().boxArray[i].position.y() + 100, 1)
+  }
+
   yield* waitUntil('Sorted_1')
   yield ArrayRef().HighLight(1, .5, new Color(Colors.green))
   yield* waitFor(.3)
@@ -360,12 +375,6 @@ export default makeScene2D(function* (view) {
   yield ArrayRef().HighLight(1, .5, new Color(Colors.surface))
   yield ArrayRef().HighLight(2, .5, new Color(Colors.surface))
   yield OutlineRef[1].stroke(Colors.surface, .5) 
-  for(let i = 0; i < OutlineRef.length; i++){
-    yield OutlineRef[i].position.y(OutlineRef[i].position.y() + 100, .5)
-  }
-  for(let i = 0; i < ArrayVal.length; i++){
-    yield ArrayRef().boxArray[i].position.y(ArrayRef().boxArray[i].position.y() + 100, .5)
-  }
   yield* OutlineRef[2].stroke(Colors.blue, .5)
 
   yield* waitUntil('Deselect blue border')
@@ -448,6 +457,12 @@ export default makeScene2D(function* (view) {
   yield* waitFor(1)
   yield* ArrayRef().HighLight(3, .5, new Color(Colors.surface))
 
+  for(let i = 0; i < OutlineRef.length; i++){
+    yield OutlineRef[i].position.y(OutlineRef[i].position.y() + 100, 1)
+  }
+  for(let i = 0; i < ArrayVal.length; i++){
+    yield ArrayRef().boxArray[i].position.y(ArrayRef().boxArray[i].position.y() + 100, 1)
+  }
   
   yield* waitUntil('RightArrayhasbeensorted')
   yield ArrayRef().HighLight(4, .5, new Color(Colors.green))
@@ -493,26 +508,38 @@ export default makeScene2D(function* (view) {
   yield* waitUntil('yougethe')
   yield ArrayRef().HighLight(1, .5, new Color(Colors.surface))
   yield ArrayRef().boxArray[2].position.x(ArrayRef().boxArray[2].position.x() + 24 + box, 1)
-  yield ArrayRef().boxArray[2].position.y(ArrayRef().boxArray[2].position.y() - 200, 1)
+  yield ArrayRef().boxArray[2].position.y(ArrayRef().boxArray[2].position.y() - 100, 1)
 
   yield ArrayRef().boxArray[0].position.x(ArrayRef().boxArray[0].position.x() + 24 + box, 1)
-  yield ArrayRef().boxArray[0].position.y(ArrayRef().boxArray[0].position.y() - 200, 1)
+  yield ArrayRef().boxArray[0].position.y(ArrayRef().boxArray[0].position.y() - 100, 1)
 
   yield OutlineRef[1].opacity(0, 1)
 
   yield ArrayRef().boxArray[3].position.x(ArrayRef().boxArray[3].position.x() - 2 - 24, 1)
-  yield ArrayRef().boxArray[3].position.y(ArrayRef().boxArray[3].position.y() - 200, 1)
+  yield ArrayRef().boxArray[3].position.y(ArrayRef().boxArray[3].position.y() - 100, 1)
 
   yield OutlineRef[2].opacity(0, 1)
 
-  yield OutlineRef[0].position.y(OutlineRef[0].position.y() + 200, 1)
+  yield OutlineRef[0].position.y(OutlineRef[0].position.y() + 100, 1)
   for(let i = 0; i < ArrayVal.length; i++){
     yield ArrayRef().boxArray[i].position.y(0, 1)
   }
 
+  yield* waitFor(.2)
 
+  yield ArrayRef().HighLight(4, .5 , new Color(Colors.green))
+  yield* waitFor(.2)
+  yield ArrayRef().HighLight(1, .5 , new Color(Colors.green))
+  yield* waitFor(.2)
+  yield ArrayRef().HighLight(2, .5 , new Color(Colors.green))
+  yield* waitFor(.2)
+  yield ArrayRef().HighLight(0, .5 , new Color(Colors.green))
+  yield* waitFor(.2)
+  yield ArrayRef().HighLight(3, .5 , new Color(Colors.green))
+  yield* waitFor(.2)
+  yield* OutlineRef[0].stroke(Colors.green, .5)
 
-  yield* waitFor(100);
+  yield* waitUntil('nextclip')
 });
 
 
