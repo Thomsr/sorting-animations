@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "seed": 54787409,
+  "timeEvents": [
+    {
+      "name": "2",
+      "targetTime": 23.193734792112494
+    },
+    {
+      "name": "4",
+      "targetTime": 74.72278970130299
+    },
+    {
+      "name": "9",
+      "targetTime": 11.171643605457936
+    },
+    {
+      "name": "compare",
+      "targetTime": 14.176939444232493
+    },
+    {
+      "name": "change",
+      "targetTime": 17.47163336016294
+    },
+    {
+      "name": "change2",
+      "targetTime": 26.404080955800087
+    },
+    {
+      "name": "Compare2",
+      "targetTime": 29.309643480027535
+    },
+    {
+      "name": "Nochange",
+      "targetTime": 33.13670047675764
+    },
+    {
+      "name": "Compare3",
+      "targetTime": 35.43389801538694
+    },
+    {
+      "name": "Change",
+      "targetTime": 39.119032388650865
+    },
+    {
+      "name": "Swap",
+      "targetTime": 51.060682545704694
+    },
+    {
+      "name": "mark",
+      "targetTime": 54.54179532490046
+    },
+    {
+      "name": "traverse",
+      "targetTime": 56.97357568915686
+    },
+    {
+      "name": "swap2",
+      "targetTime": 65.50302901314716
+    },
+    {
+      "name": "searching",
+      "targetTime": 68.51666666666667
+    },
+    {
+      "name": "next",
+      "targetTime": 82.76502989198268
+    }
+  ]
+}

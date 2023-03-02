@@ -1,4 +1,46 @@
 {
   "version": 1,
-  "seed": 166554905
+  "seed": 166554905,
+  "timeEvents": [
+    {
+      "name": "Minimum",
+      "targetTime": 1.5104730019053214
+    },
+    {
+      "name": "beginn",
+      "targetTime": 5.629873387307161
+    },
+    {
+      "name": "Sorted",
+      "targetTime": 6.65
+    },
+    {
+      "name": "How it works",
+      "targetTime": 9.616666666666667
+    },
+    {
+      "name": "Minimum2",
+      "targetTime": 12.133333333333333
+    },
+    {
+      "name": "Swap",
+      "targetTime": 15.633333333333333
+    },
+    {
+      "name": "Move",
+      "targetTime": 20.2163964108386
+    },
+    {
+      "name": "Marking",
+      "targetTime": 24.089655390514192
+    },
+    {
+      "name": "Then",
+      "targetTime": 28.1
+    },
+    {
+      "name": "Next",
+      "targetTime": 36.4335659980571
+    }
+  ]
 }

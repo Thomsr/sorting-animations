@@ -27,13 +27,23 @@ export default makeScene2D(function* (view) {
     <Node y={80}>
         <Node ref={NodeBogo} x={-250}>
             <Text 
-                text={"BOGO"}
+                text={"MERGE"}
                 y={-450}
                 {...textStyle}
             />
             <Array
                 ref={ArrayBogo}
                 values={ArrayValues}
+            />
+            <Rect 
+                ref={out}
+                stroke={Colors.blue}
+                lineWidth={6}
+                width={box + 8}
+                y={(2/2) * box - (box / 2) - 2*box}
+                radius={new Spacing(4)}
+                height={() => boxsignal() * box + 8}
+                opacity={1}
             />
         </Node>
         <Text 
@@ -53,16 +63,6 @@ export default makeScene2D(function* (view) {
                 ref={ArrayMerge}
                 values={ArrayValues2}
             />
-            <Rect 
-                ref={out}
-                stroke={Colors.blue}
-                lineWidth={6}
-                width={box + 8}
-                y={(2/2) * box - (box / 2) - 2*box}
-                radius={new Spacing(4)}
-                height={() => boxsignal() * box + 8}
-                opacity={0}
-            />
         </Node>
         <Text 
             text={"WHO WILL WIN?"}
@@ -78,33 +78,33 @@ export default makeScene2D(function* (view) {
     </>
     )
     yield* all(
-        bogo(ArrayValues, ArrayBogo()),
+        merge(ArrayValues, ArrayBogo(), boxsignal, out()),
         insertionSort(ArrayMerge()),
     )
     yield* waitFor(1);
-    yield* all(
-        loop(
-            ArrayValues.length,
-            i => ArrayBogo().extraHighLight(i, new Color(Colors.surface), .3)
-        ),
+    yield all(
+        // loop(
+        //     ArrayValues.length,
+        //     i => ArrayBogo().extraHighLight(i, new Color(Colors.surface), .3)
+        // ),
         loop(
             ArrayValues.length,
             i => ArrayMerge().extraHighLight(i, new Color(Colors.surface), .3)
         ),
     )
-    // yield ArrayMerge().removeBlur(3, new Color(Colors.surface), .3)
-    // yield* ArrayMerge().HighLight(3, .3, new Color(Colors.surface))
-    // yield ArrayMerge().removeBlur(2, new Color(Colors.surface), .3)
-    // yield* ArrayMerge().HighLight(2, .3, new Color(Colors.surface))
-    // yield ArrayMerge().removeBlur(0, new Color(Colors.surface), .3)
-    // yield* ArrayMerge().HighLight(0, .3, new Color(Colors.surface))
-    // yield ArrayMerge().removeBlur(1, new Color(Colors.surface), .3)
-    // yield* ArrayMerge().HighLight(1, .3, new Color(Colors.surface))
-    // yield ArrayMerge().removeBlur(4, new Color(Colors.surface), .3)
-    // yield* ArrayMerge().HighLight(4, .3, new Color(Colors.surface))
-    // yield out().stroke(Colors.blue, .3)
-    // yield boxsignal(2, .3)
-    // yield* out().position.y(-390+128+28, .3)
+    yield ArrayBogo().removeBlur(3, new Color(Colors.surface), .3)
+    yield* ArrayBogo().HighLight(3, .3, new Color(Colors.surface))
+    yield ArrayBogo().removeBlur(2, new Color(Colors.surface), .3)
+    yield* ArrayBogo().HighLight(2, .3, new Color(Colors.surface))
+    yield ArrayBogo().removeBlur(0, new Color(Colors.surface), .3)
+    yield* ArrayBogo().HighLight(0, .3, new Color(Colors.surface))
+    yield ArrayBogo().removeBlur(1, new Color(Colors.surface), .3)
+    yield* ArrayBogo().HighLight(1, .3, new Color(Colors.surface))
+    yield ArrayBogo().removeBlur(4, new Color(Colors.surface), .3)
+    yield* ArrayBogo().HighLight(4, .3, new Color(Colors.surface))
+    yield out().stroke(Colors.blue, .3)
+    yield boxsignal(2, .3)
+    yield* out().position.y(-390+128+28, .3)
 })
 
 function* merge(ArrayValues: number[], ArrayMerge: Array, box: SimpleSignal<number>, Outline: Rect){
