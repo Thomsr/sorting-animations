@@ -6,12 +6,13 @@ export default defineConfig({
   plugins: [
     motionCanvas({
       project: [
-        './src/project/project.ts',
-        './src/project/shellsort.ts',
-        './src/project/insertion-vs-bubble.ts',
-        './src/project/test.ts',
-        './src/project/bogo-vs-merge.ts',
-        './src/project/selectionsort.ts'
+        './src/project/vs-template.ts',
+        // './src/project/short-template.ts',
+        // './src/project/project.ts',
+        // './src/project/shellsort.ts',
+        // './src/project/insertion-vs-bubble.ts',
+        // './src/project/test.ts',
+        // './src/project/selectionsort.ts'
       ]
     })
   ],

@@ -1,4 +1,4 @@
-import {makeProject} from '@motion-canvas/core/lib';
+import {makeProject} from '@motion-canvas/core/';
 
 import audio from '../../audio/selectionVoice.mp4'
 import intro from '../scenes/intro?scene'
@@ -14,5 +14,4 @@ export default makeProject({
     time
 ],
 audio: audio,
-  background: '#141414',
 });
