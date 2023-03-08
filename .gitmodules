@@ -1,3 +1,7 @@
 [submodule "src/components/ArrayComponent"]
 	path = src/components/ArrayComponent
 	url = https://github.com/Thomsr/ArrayComponent.git
+
+[submodule "src/components/graph-component"]
+	path = src/components/graph-component
+	url = https://github.com/Thomsr/graph-component.git
