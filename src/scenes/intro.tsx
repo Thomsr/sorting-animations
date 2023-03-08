@@ -4,9 +4,6 @@ import {Vector2} from '@motion-canvas/core/lib/types';
 import { createRef } from '@motion-canvas/core/lib/utils';
 import { easeInOutCubic, tween } from '@motion-canvas/core/lib/tweening';
 
-const RED = '#ff6470';
-const GREEN = '#99C47A';
-const BLUE = '#68ABDF';
 const WHITE = '#fff'
 
 export default makeScene2D(function* (view) {
@@ -34,7 +31,7 @@ export default makeScene2D(function* (view) {
         ref={Bottom}
         stroke={WHITE}
         lineWidth={Width}
-        points={[Vector2.zero, () => Vector2.down]}
+        points={[Vector2.zero, Vector2.zero]}
         y={-bottomLength/2 + Width}
       />
     </Node>

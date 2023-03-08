@@ -1,6 +1,5 @@
 {
   "version": 1,
-  "seed": 3862406902,
   "timeEvents": [
     {
       "name": "5",
@@ -146,5 +145,6 @@
       "name": "nextclip",
       "targetTime": 141.74712350012692
     }
-  ]
+  ],
+  "seed": 3862406902
 }

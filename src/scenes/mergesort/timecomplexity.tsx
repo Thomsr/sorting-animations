@@ -5,7 +5,7 @@ import { createRef, makeRef, range, useLogger } from '@motion-canvas/core/lib/ut
 import { Colors } from '../../styles/styles';
 import { Array } from '../../components/ArrayComponent/Array';
 import { createSignal } from '@motion-canvas/core/lib/signals';
-import { Latex, Line, Rect, Text } from '@motion-canvas/2d/lib/components';
+import { Latex, Line, Rect, Txt } from '@motion-canvas/2d/lib/components';
 import { slideTransition } from '@motion-canvas/core/lib/transitions' 
 import { createEaseInBack } from '@motion-canvas/core/lib/tweening';
 
@@ -13,7 +13,7 @@ import { createEaseInBack } from '@motion-canvas/core/lib/tweening';
 export default makeScene2D(function* (view) {
   yield* slideTransition(Direction.Bottom, 1)
 
-  const time = createRef<Text>();
+  const time = createRef<Txt>();
   const textStyle = {
     paddingTop: 10,
     fontFamily: 'JetBrains Mono',
@@ -21,7 +21,7 @@ export default makeScene2D(function* (view) {
   };
 
   view.add(
-    <Text
+    <Txt
         ref={time}
         text={"TIME COMPLEXITY"}
         opacity={0}
@@ -37,12 +37,12 @@ export default makeScene2D(function* (view) {
 
   const text = createRef<Latex>();
   const lineRef = createRef<Line>();
-  const nRef = createRef<Text>();
+  const nRef = createRef<Txt>();
   const ArrayRef = createRef<Array>();
 
   view.add(
     <>
-    <Text 
+    <Txt 
       ref={text}
       text={"O(n\log n)"}
       fontSize={150}
@@ -50,7 +50,7 @@ export default makeScene2D(function* (view) {
       {...textStyle}
       opacity={0}
     />
-    <Text
+    <Txt
                 ref={nRef}
                 text={"n"}
                 {...textStyle}
@@ -123,7 +123,7 @@ export default makeScene2D(function* (view) {
   yield* ArrayRef().opacity(0, .5)
 
   view.add(
-    <Text
+    <Txt
       ref={text} 
       text={"Thanks for Watching!"}
       fontSize={80}

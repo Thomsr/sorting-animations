@@ -1,10 +1,9 @@
-import {makeProject} from '@motion-canvas/core/lib';
+import {makeProject} from '@motion-canvas/core';
 
-import test from './scenes/testscene/test?scene'
+import test from '../scenes/testscene/test?scene'
 
 export default makeProject({
   scenes: [
     test
 ],
-  background: '#141414',
 });

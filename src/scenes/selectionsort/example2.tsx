@@ -4,7 +4,7 @@ import { Array } from "../..//components/ArrayComponent/Array";
 import { Colors } from "@/styles/styles"
 import { createRef, useLogger } from "@motion-canvas/core/lib/utils";
 import { Color, Direction, Spacing, Vector2 } from "@motion-canvas/core/lib/types";
-import { Image, Node, Rect, Text } from "@motion-canvas/2d/lib/components";
+import { Img, Node, Rect, Txt } from "@motion-canvas/2d/lib/components";
 import { createSignal, SimpleSignal } from "@motion-canvas/core/lib/signals";
 import swapIcon from "../../../images/icons/swap Icon.png"
 import minIcon from "../../../images/icons/min Icon.png"
@@ -18,7 +18,7 @@ import { easeInOutCubic, tween } from "@motion-canvas/core/lib/tweening";
 
 export default makeScene2D(function* (view) {
     yield* slideTransition(Direction.Bottom, 1);
-    const Example = createRef<Text>();
+    const Example = createRef<Txt>();
     const textStyle = {
         paddingTop: 10,
         fontFamily: 'JetBrains Mono',
@@ -29,7 +29,7 @@ export default makeScene2D(function* (view) {
     const BoxWidth = createSignal(1);
 
     view.add(
-        <Text
+        <Txt
             ref={Example}
             text={"EXAMPLE"}
             opacity={0}

@@ -4,7 +4,7 @@ import { Array } from "../..//components/ArrayComponent/Array";
 import { Colors } from "@/styles/styles"
 import { createRef, useLogger } from "@motion-canvas/core/lib/utils";
 import { Color, Direction, Spacing, Vector2 } from "@motion-canvas/core/lib/types";
-import { Image, Latex, Line, Node, Rect, Text } from "@motion-canvas/2d/lib/components";
+import { Img, Latex, Line, Node, Rect, Txt } from "@motion-canvas/2d/lib/components";
 import { createSignal, SimpleSignal } from "@motion-canvas/core/lib/signals";
 import swapIcon from "../../../images/icons/swap Icon.png"
 import minIcon from "../../../images/icons/min Icon.png"
@@ -18,7 +18,7 @@ import { easeInOutCubic, tween } from "@motion-canvas/core/lib/tweening";
 
 export default makeScene2D(function* (view) {
     yield* slideTransition(Direction.Bottom, 1);
-    const Example = createRef<Text>();
+    const Example = createRef<Txt>();
     const textStyle = {
         paddingTop: 10,
         fontFamily: 'JetBrains Mono',
@@ -29,7 +29,7 @@ export default makeScene2D(function* (view) {
     const BoxWidth = createSignal(1);
 
     view.add(
-        <Text
+        <Txt
             ref={Example}
             text={"TIME COMPLEXITY"}
             opacity={0}
@@ -43,14 +43,14 @@ export default makeScene2D(function* (view) {
     yield* waitFor(.7);
     yield* Example().opacity(0, .5)
 
-    const text = createRef<Text>();
+    const text = createRef<Txt>();
     const lineRef = createRef<Line>();
-    const nRef = createRef<Text>();
+    const nRef = createRef<Txt>();
     const ArrayRef = createRef<Array>();
   
     view.add(
       <>
-      <Text 
+      <Txt 
         ref={text}
         text={"O(n^2)"}
         fontSize={150}
@@ -58,7 +58,7 @@ export default makeScene2D(function* (view) {
         {...textStyle}
         opacity={0}
       />
-      <Text
+      <Txt
                   ref={nRef}
                   text={"n"}
                   {...textStyle}
@@ -144,7 +144,7 @@ export default makeScene2D(function* (view) {
     yield* waitUntil('thanks')
     yield* ArrayRef().opacity(0, 1)
     view.add(
-        <Text
+        <Txt
           ref={text} 
           text={"Thanks for Watching!"}
           fontSize={80}

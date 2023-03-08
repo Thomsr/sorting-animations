@@ -1,4 +1,4 @@
-import {makeProject} from '@motion-canvas/core/lib';
+import {makeProject} from '@motion-canvas/core';
 
 import scene from '../scenes/short-template/short-template?scene';
 
@@ -6,5 +6,4 @@ export default makeProject({
   scenes: [
     scene,
 ],
-  background: '#181818',
 });

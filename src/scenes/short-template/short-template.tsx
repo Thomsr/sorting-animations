@@ -1,4 +1,4 @@
-import { Node, Rect, Text } from '@motion-canvas/2d/lib/components';
+import { Node, Rect, Txt } from '@motion-canvas/2d/lib/components';
 import { makeScene2D } from '@motion-canvas/2d/lib/scenes';
 import { all, any, loop, sequence, waitFor } from '@motion-canvas/core/lib/flow';
 import { createSignal, SimpleSignal } from '@motion-canvas/core/lib/signals';
@@ -17,7 +17,7 @@ export default makeScene2D(function* (view) {
 
     view.add(
         <>
-        <Text 
+        <Txt 
             text={"SELECTION SORT"}
             y={-390-200}
             fontSize={100}
@@ -26,7 +26,7 @@ export default makeScene2D(function* (view) {
             fill={'white'}
             opacity={.6}
         />
-        <Text 
+        <Txt 
             text={"Full explanation on Youtube"}
             y={-390-115}
             fontSize={50}

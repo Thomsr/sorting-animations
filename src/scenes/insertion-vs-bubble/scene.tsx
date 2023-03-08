@@ -1,4 +1,4 @@
-import { Node, Text } from '@motion-canvas/2d/lib/components';
+import { Node, Txt } from '@motion-canvas/2d/lib/components';
 import { makeScene2D } from '@motion-canvas/2d/lib/scenes';
 import { all, any, loop, sequence, waitFor } from '@motion-canvas/core/lib/flow';
 import { Color } from '@motion-canvas/core/lib/types';
@@ -21,7 +21,7 @@ export default makeScene2D(function* (view) {
     <>
     <Node y={80}>
         <Node ref={NodeBubble} x={-250}>
-            <Text 
+            <Txt 
                 text={"INSERTION"}
                 y={-450}
                 {...textStyle}
@@ -31,7 +31,7 @@ export default makeScene2D(function* (view) {
                 values={ArrayValues}
             />
         </Node>
-        <Text 
+        <Txt 
             text={"VS"}
             y={-450}
             fontWeight={800}
@@ -39,7 +39,7 @@ export default makeScene2D(function* (view) {
             fill={Colors.blue}
         />
         <Node ref={NodeInsertion} x={250}>
-            <Text 
+            <Txt 
                 text={"BUBBLE"}
                 y={-450}
                 {...textStyle}
@@ -49,7 +49,7 @@ export default makeScene2D(function* (view) {
                 values={ArrayValues2}
             />
         </Node>
-        <Text 
+        <Txt 
             text={"WHO WILL WIN?"}
             y={-600}
             fontWeight={800}

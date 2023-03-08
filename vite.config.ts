@@ -7,12 +7,12 @@ export default defineConfig({
     motionCanvas({
       project: [
         './src/project/vs-template.ts',
-        // './src/project/short-template.ts',
-        // './src/project/project.ts',
-        // './src/project/shellsort.ts',
-        // './src/project/insertion-vs-bubble.ts',
-        // './src/project/test.ts',
-        // './src/project/selectionsort.ts'
+        './src/project/short-template.ts',
+        './src/project/project.ts',
+        './src/project/shellsort.ts',
+        './src/project/insertion-vs-bubble.ts',
+        './src/project/test.ts',
+        './src/project/selectionsort.ts'
       ]
     })
   ],

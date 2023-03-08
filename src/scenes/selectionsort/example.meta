@@ -1,6 +1,5 @@
 {
   "version": 1,
-  "seed": 166554905,
   "timeEvents": [
     {
       "name": "Minimum",
@@ -42,5 +41,6 @@
       "name": "Next",
       "targetTime": 36.4335659980571
     }
-  ]
+  ],
+  "seed": 166554905
 }

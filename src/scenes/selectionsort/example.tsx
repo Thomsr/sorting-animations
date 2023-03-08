@@ -4,7 +4,7 @@ import { Array } from "../..//components/ArrayComponent/Array";
 import { Colors } from "@/styles/styles"
 import { createRef, useLogger } from "@motion-canvas/core/lib/utils";
 import { Color, Spacing } from "@motion-canvas/core/lib/types";
-import { Image, Node, Rect } from "@motion-canvas/2d/lib/components";
+import { Img, Node, Rect } from "@motion-canvas/2d/lib/components";
 import { createSignal, SimpleSignal } from "@motion-canvas/core/lib/signals";
 import swapIcon from "../../../images/icons/swap Icon.png"
 import minIcon from "../../../images/icons/min Icon.png"
@@ -91,9 +91,9 @@ export default makeScene2D(function* (view) {
 
     const iconsRef = createRef<Node>();
 
-    const minRef = createRef<Image>();
-    const swapRef = createRef<Image>();
-    const expandRef = createRef<Image>();
+    const minRef = createRef<Img>();
+    const swapRef = createRef<Img>();
+    const expandRef = createRef<Img>();
 
     const rect = createRef<Rect>();
 
@@ -116,7 +116,7 @@ export default makeScene2D(function* (view) {
                 radius={new Spacing(4)}
                 x={-(128+28)}
             >
-                <Image src={minIcon} />
+                <Img src={minIcon} />
             </Rect>
             <Rect
                 ref={swapRef}
@@ -125,7 +125,7 @@ export default makeScene2D(function* (view) {
                 size={[128,128]}
                 radius={new Spacing(4)}
             >
-                <Image src={swapIcon} />
+                <Img src={swapIcon} />
             </Rect>
             <Rect
                 ref={expandRef}
@@ -135,7 +135,7 @@ export default makeScene2D(function* (view) {
                 radius={new Spacing(4)}
                 x={(128+28)}
             >
-                <Image src={expandIcon} />
+                <Img src={expandIcon} />
             </Rect>
         </Node>
         </>
@@ -160,9 +160,9 @@ export default makeScene2D(function* (view) {
     
     yield* waitUntil('Minimum2')
     yield minRef().stroke(Colors.blue, .5);
-    const minBlue = createRef<Image>();
+    const minBlue = createRef<Img>();
     view.add(
-        <Image 
+        <Img
             ref={minBlue}
             src={minIconblue} 
             x={-960+128} 
@@ -187,9 +187,9 @@ export default makeScene2D(function* (view) {
     )
     yield* ArrayRef().HighLight(4, .5, new Color(Colors.surface))
     yield* waitUntil('Swap')
-    const swapBlue = createRef<Image>();
+    const swapBlue = createRef<Img>();
     view.add(
-        <Image 
+        <Img
             ref={swapBlue}
             src={swapIconblue} 
             x={-960+128} 
@@ -217,9 +217,9 @@ export default makeScene2D(function* (view) {
             radius={new Spacing(4)}
         />
     )
-    const expandBlue = createRef<Image>();
+    const expandBlue = createRef<Img>();
     view.add(
-        <Image 
+        <Img 
             ref={expandBlue}
             src={expandIconblue} 
             x={-960+128} 

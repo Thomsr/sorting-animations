@@ -5,14 +5,14 @@ import { createRef, makeRef, range, useLogger } from '@motion-canvas/core/lib/ut
 import { Colors } from '../../styles/styles';
 import { Array } from '../../components/ArrayComponent/Array';
 import { createSignal } from '@motion-canvas/core/lib/signals';
-import { Rect, Text } from '@motion-canvas/2d/lib/components';
+import { Rect, Txt } from '@motion-canvas/2d/lib/components';
 import { slideTransition } from '@motion-canvas/core/lib/transitions' 
 
 
 export default makeScene2D(function* (view) {
   yield* slideTransition(Direction.Top, 1)
 
-  const Example1 = createRef<Text>();
+  const Example1 = createRef<Txt>();
   const textStyle = {
     paddingTop: 10,
     fontFamily: 'JetBrains Mono',
@@ -20,7 +20,7 @@ export default makeScene2D(function* (view) {
   };
 
   view.add(
-    <Text
+    <Txt
         ref={Example1}
         text={"EXAMPLE 1"}
         opacity={0}

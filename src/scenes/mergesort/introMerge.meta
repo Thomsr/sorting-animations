@@ -1,6 +1,5 @@
 {
   "version": 1,
-  "seed": 3097140763,
   "timeEvents": [
     {
       "name": "Divide",
@@ -22,5 +21,6 @@
       "name": "next",
       "targetTime": 20.5605048797734
     }
-  ]
+  ],
+  "seed": 3097140763
 }

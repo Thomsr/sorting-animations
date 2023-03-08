@@ -1,4 +1,4 @@
-import {makeProject} from '@motion-canvas/core/lib';
+import {makeProject} from '@motion-canvas/core';
 
 import intro from '../../src/scenes/intro?scene'
 import introMerge from '../scenes/mergesort/introMerge?scene'
@@ -13,6 +13,5 @@ export default makeProject({
     example,
     time,
   ],
-  background: '#141414',
   audio: voice,
 });

@@ -1,6 +1,5 @@
 {
   "version": 1,
-  "seed": 1763803740,
   "timeEvents": [
     {
       "name": "Where",
@@ -18,5 +17,6 @@
       "name": "go away",
       "targetTime": 15.216666666666667
     }
-  ]
+  ],
+  "seed": 1763803740
 }
