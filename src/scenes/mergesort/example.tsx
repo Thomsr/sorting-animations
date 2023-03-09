@@ -541,9 +541,3 @@ export default makeScene2D(function* (view) {
 
   yield* waitUntil('nextclip')
 });
-
-
-
-function* newOutline(outlineRef: Rect[], size: number, Nodes: Rect[]){
-  
-}
