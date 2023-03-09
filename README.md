@@ -15,5 +15,6 @@ And the following folders are used as templates:
 # Components
 Custom components that are being used in this project:
 * `ArrayComponent`
+* `graph-component`
 
 `testscene` is used as a scene where I can test all my custom components such as the `ArrayComponent` and the `graph-component`
